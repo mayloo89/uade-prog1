@@ -9,20 +9,23 @@ def tieneOrdenAscendente(lista):
     return True
 
 def main():
-    print("Ingrese los valores de la lista.\nCuando desee salir ingrese 'x'.\n")
+    print("Ingrese los valores de la lista.\nCuando desee salir ingrese 'exit'.\n")
 
     exit = False
     lista = []
 
     while exit == False:
-        ingreso = input()
-        if ingreso.isdigit():
-            lista.append(int(ingreso))
+        ingreso = str(input())
+        if ingreso == 'exit' or ingreso == 'EXIT':
+            exit = True
         else:
-            if ingreso == 'x' or ingreso == 'X':
-                exit = True
-            else:
-                print("Ingreso un dato incorrecto. Vuelva a intentar.")
+            lista.append(ingreso)
+            
+
+    if len(lista) == 0:
+        print("La lista ingresada esta vacia.")
+        return 0
+
     if tieneOrdenAscendente(lista):
         print("La lista ingresada esta ordenada de forma ascendente.")
     else:
