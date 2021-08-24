@@ -19,12 +19,19 @@ def normalizar(lista):
             if x+1 == tamaño-1:
                 auxiliar.append(1)
                 distintos = distintos+1
-    print(auxiliar)
-    for x in auxiliar:
-        valor = (1/distintos)/x
-        while x > 0:
+    if distintos == 0:
+        valor = 1/cant
+        while cant > 0:
             normalizada.append(valor)
-            x = x - 1
+            cant = cant - 1
+        return normalizada
+
+    else:
+        for x in auxiliar:
+            valor = (1/distintos)/x
+            while x > 0:
+                normalizada.append(valor)
+                x = x - 1
             
             
     return normalizada
