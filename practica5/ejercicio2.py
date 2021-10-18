@@ -1,0 +1,1 @@
+# Realizar una funcion que reciba como parametro dos cadenas de caracteres
