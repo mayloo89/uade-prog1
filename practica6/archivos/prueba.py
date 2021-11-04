@@ -17,5 +17,11 @@ linea 7
         de tres 
         lineas"""
 linea 8
+    '''docstring 4 de comillas simples
+    y dos lineas'''
 linea 9 #comentada
 linea 10
+
+linea """docstring 5""" 11
+linea 12 con "#"
+
