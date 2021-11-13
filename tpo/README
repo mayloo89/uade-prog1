@@ -1,0 +1,16 @@
+**********
+Buscaminas
+**********
+El proyecto implementa un buscaminas sencillo.
+El nivel se carga por archivo, permitiendo que el programa escale
+y se creen distintos niveles. A futuro esto podria ser seleccionable
+por el usuario mediante inputs y modificando la ruta del archivo a 
+cargar en el juego en la linea 115. Se asume que el formato de los 
+archivos de entrada son correctos, no se verifican en el programa.
+
+El usuario ingresa coordenadas del tablero donde cree no hay minas.
+Segun la cercania de minas en los casilleros aledaños se indica un
+valor numerico. Cuanto mayor sea el numero, es decir mas minas haya 
+en los casilleros aledaños el jugador suma mas puntos. Al encontrar
+una mina el juego termina y los puntos obtenidos como la cantidad de
+movimientos sin encontrar minas son el resultado final.
