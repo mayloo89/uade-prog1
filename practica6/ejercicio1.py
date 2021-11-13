@@ -59,10 +59,10 @@ def extraeComentarios():
 
                     #Busco si el docstring termina en la misma linea o es multilinea.
                     aux = linea.rfind(comillas)
+
                     if aux == pos:
                         fin = False
                         while not fin:
-                            linea = archEntrada.readline()
                             aux = linea.rfind(comillas)
                             if aux > 0:
                                 #Encontre el fin del docstring. Salgo del loop.
